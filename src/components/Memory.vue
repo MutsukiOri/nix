@@ -12,7 +12,7 @@ export default {
   data () {
     return {
       msg: '◇ Memory',
-      memory:`省略させてちょ`
+      memory: `省略させてちょ`
     }
   }
 }
