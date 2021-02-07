@@ -20,9 +20,9 @@
 import Timeline from 'vue-tweet-embed/src/timeline'
 
 export default {
-    components: {
-    'v-timeline': Timeline,
-  },
+  //   components: {
+  //   'v-timeline': Timeline,
+  // },
   name: 'HelloWorld',
   data () {
     return {
@@ -49,7 +49,7 @@ h1 {
   
 }
 a {
-  /* background-color: aquamarine; */
+  background-color: aquamarine;
 }
 </style>
 
