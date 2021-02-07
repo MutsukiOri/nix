@@ -2,13 +2,13 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>{{ contact }}</p>
-    <div class="twitter-widget"
+    <!-- <div class="twitter-widget"
     style="width:400px; heght:500px;">
     <v-timeline
       :id="twitterId"
       :source-type="'profile'"
       :options="{ 'height': twitterHeight }" />
-      </div>
+      </div> -->
     <a class="twitter-timeline" data-width="360" data-height="730" href="https://twitter.com/EnsembleNix?ref_src=twsrc%5Etfw">Tweets by EnsembleNix</a> 
   </div>
 
