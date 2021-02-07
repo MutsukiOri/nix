@@ -1,10 +1,13 @@
 <template>
   <div id="app">
-    <img src="./assets/ensemble_nix_header.jpg">
+    <router-link to="/" exact>
+      <img src="./assets/ensemble_nix_header.jpg">
+    </router-link>
     <tab-menu></tab-menu>
     <router-view/>
   </div>
 </template>
+
 
 <script>
 
