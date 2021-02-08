@@ -2,7 +2,7 @@
     
   <div id="app">
     <mq-layout mq="sp">
-      <Push :closeOnNavigation="true"><tab-side></tab-side></Push>
+      <Slide :closeOnNavigation="true"><tab-side></tab-side></Slide>
     </mq-layout>
     <div id="page-wrap">
       <router-link to="/" exact>
@@ -21,14 +21,14 @@
 
 import TabMenu from '@/components/TabMenu'
 import TabSide from '@/components/TabSide'
-import { Push } from 'vue-burger-menu'
+import { Slide } from 'vue-burger-menu'
 
 export default {
   name: 'App',
   components: {
     TabMenu,
     TabSide,
-    Push
+    Slide
   }
 }
 </script>
