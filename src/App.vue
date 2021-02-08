@@ -2,15 +2,17 @@
     
   <div id="app">
     <mq-layout mq="sp">
-      <Bubble><tab-side></tab-side></Bubble>
+      <Push :closeOnNavigation="true"><tab-side></tab-side></Push>
     </mq-layout>
-    <router-link to="/" exact>
-      <img src="./assets/ensemble_nix_header.jpg">
-    </router-link>
-    <mq-layout mq="pc+">
-      <tab-menu></tab-menu>
-    </mq-layout>
-    <router-view/>
+    <div id="page-wrap">
+      <router-link to="/" exact>
+        <img src="./assets/ensemble_nix_header.jpg">
+      </router-link>
+      <mq-layout mq="pc+">
+        <tab-menu></tab-menu>
+      </mq-layout>
+      <router-view/>
+    </div>
   </div>
 </template>
 
@@ -19,14 +21,14 @@
 
 import TabMenu from '@/components/TabMenu'
 import TabSide from '@/components/TabSide'
-import { Bubble } from 'vue-burger-menu'
+import { Push } from 'vue-burger-menu'
 
 export default {
   name: 'App',
   components: {
     TabMenu,
     TabSide,
-    Bubble
+    Push
   }
 }
 </script>
@@ -73,5 +75,12 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   
+}
+.bm-burger-button {
+  position: fixed;
+}
+.bm-menu {
+  background-color: grey;
+  opacity: 0.8;
 }
 </style>
