@@ -74,6 +74,7 @@ p{
 body {
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 20px;
   
 }
 .bm-burger-button {
@@ -82,5 +83,6 @@ body {
 .bm-menu {
   background-color: grey;
   opacity: 0.8;
+  position: fixed;
 }
 </style>
