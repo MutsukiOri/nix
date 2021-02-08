@@ -1,9 +1,15 @@
 <template>
+    
   <div id="app">
+    <mq-layout mq="sp">
+      <Bubble><tab-side></tab-side></Bubble>
+    </mq-layout>
     <router-link to="/" exact>
       <img src="./assets/ensemble_nix_header.jpg">
     </router-link>
-    <tab-menu></tab-menu>
+    <mq-layout mq="pc+">
+      <tab-menu></tab-menu>
+    </mq-layout>
     <router-view/>
   </div>
 </template>
@@ -12,11 +18,15 @@
 <script>
 
 import TabMenu from '@/components/TabMenu'
+import TabSide from '@/components/TabSide'
+import { Bubble } from 'vue-burger-menu'
 
 export default {
   name: 'App',
   components: {
-    TabMenu
+    TabMenu,
+    TabSide,
+    Bubble
   }
 }
 </script>

@@ -14,9 +14,10 @@
 import constants from '@/assets/constants'
 
 export default {
-    name: 'TabMenu',
+  name: 'TabSide',
   data () {
     return {
+      drawer: false,
       menuItems: constants.menuItems
     }
   }
@@ -30,37 +31,19 @@ ol {
   /* margin-left: 5%; */
   margin-right: 5%;
   width: 1el;
-  display:flex;
+  /* display:flex; */
   justify-content: left;
   padding-left: 0px;
   list-style: none;
   /* background-color: yellowgreen; */
 }
-
-li {
-  width: 120px;
-  height: 50px;
-  /* margin-left:0px;
-  margin-right:10px; */
-  font-size: 17px;
-  position: relative;
-  /* background-color: skyblue; */
-  border-radius: 10px;
-  transition: 1s;
-}
-
-li:hover {
-  /* background-color: yellowgreen; */
-}
-
-/*  router-linkがaタグとして表示されてたのでスタイルをaタグに書いた*/
 a {
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  color: black;
+  color: white;
   text-decoration: none;
   line-height: 50px;
   transition: 1s;
@@ -69,5 +52,4 @@ a {
 a:hover {
   color: red;
 }
-
 </style>
